@@ -15,101 +15,168 @@
 
 
 /* shared styles */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
 }
-img{
+
+img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-.heading-black{
-color:rgb(0, 0, 0);
-font-family: Noto Serif;
-font-size: 50px;
-font-weight: 700;
+
+.heading-black {
+    color: rgb(0, 0, 0);
+    font-family: Noto Serif;
+    font-size: 50px;
+    font-weight: 700;
 
 }
-.heading-orange{
-color: rgb(233, 90, 8);
-font-family: Noto Serif;
-font-size: 50px;
-font-weight: 700;
+
+.heading-orange {
+    color: rgb(233, 90, 8);
+    font-family: Noto Serif;
+    font-size: 50px;
+    font-weight: 700;
 }
 
-.p-style{
-color: rgba(0, 0, 0, 0.5);
-font-family: Inter;
-font-size: 22px;
-font-weight: 400;
+.p-style {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
 
 }
-.small-style{
-color: rgb(137, 135, 161);
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;  
+
+.small-style {
+    color: rgb(137, 135, 161);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    padding: 16px 50px;
+    margin: 20px 0px;
+    background-color: rgb(233, 90, 8);
+    color: rgb(255, 255, 255);
+    border: none;
 }
 
 /* header styles */
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-links ul{
-   display: flex;
-   gap: 48px;
+
+.nav-links ul {
+    display: flex;
+    gap: 48px;
 }
-.nav-links ul li{
+
+.nav-links ul li {
     list-style: none;
 }
-.nav-links ul #home{
-color: rgb(37, 36, 50);
-font-family: Inter;
-font-size: 16px;
-font-weight: 700;
+
+.nav-links ul #home {
+    color: rgb(37, 36, 50);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
 }
-.nav-links ul #cart{
-color: rgb(0, 0, 0);
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
+
+.nav-links ul #cart {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
 }
+
 /* .nav-links .icon{
     visibility: visible;
 } */
- .mobile-nav{
+.mobile-nav {
     visibility: hidden;
- }
+}
 
- /* banner styles */
- .banner{
+/* banner styles */
+.banner {
     /* border: 1px solid tomato; */
     margin-top: 120px;
     margin-bottom: 120px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
- }
- .banner-left{
+}
+
+.banner-left {
     /* border: 1px solid black; */
     flex: 1;
- }
- .banner-right{
+}
+
+.banner-right {
     /* border: 1px solid black; */
     flex: 1;
- }
- .banner-left .heading-black,.heading-orange{
-     font-size: 65px;
- }
+}
+
+.banner-left .heading-black,
+.heading-orange {
+    font-size: 65px;
+}
+
+
+/* our plants */
+.plant {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.our-plants p{
+ margin-bottom: 50px;
+ margin-top: 16px;
+}
+
+#card-name {
+    color: rgb(17, 17, 17);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#card-cost {
+    color: rgb(17, 17, 17);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    /* border: 1px solid blue; */
+}
+
+.card img {
+    width: 100%;
+}
+
 
 
 
@@ -124,63 +191,74 @@ font-weight: 400;
 @media screen and (max-width:440px) {
 
     /* shared styles */
-    *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.container{
-    width: 100%;
-}
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+    /* * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    } */
 
 
     /* nav bar */
-.mobile-nav{
-    /* border: 1px solid red; */
-    visibility:visible;
-    display: flex;
-    justify-content:space-between;
-    width: 100%;
-    height: auto;
-    margin:18px 30px;
-    padding: 0 50px;
+    .mobile-nav {
+        /* border: 1px solid red; */
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin: 18px 30px;
+        padding: 0 50px;
 
 
- }
- .mobile-time{
-    color: #edeff2;;
- }
- .mobile-logo{
-    display: flex;
-    gap: 15px;
- }
+    }
 
-.nav{
-    margin: 13px 16px 28px;
-}
-.nav-links .icon{
-    visibility: hidden;
-}
+    .mobile-time {
+        color: #edeff2;
+        ;
+    }
 
-/* banner */
-.banner{
-    border: 1px solid tomato;
-    /* margin-top: 120px;
+    .mobile-logo {
+        display: flex;
+        gap: 15px;
+    }
+
+    .nav {
+        margin: 13px 16px 28px;
+    }
+
+    .nav-links .icon {
+        visibility: hidden;
+    }
+
+    /* banner */
+    .banner {
+        border: 1px solid tomato;
+        /* margin-top: 120px;
     margin-bottom: 120px; */
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: flex-end; 
-    width: 100%;
-    height: auto;
- }
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: auto;
+    }
+
+    /* our plants */
+    .cards {
+    grid-template-columns: repeat(2, 1fr);
+}
 
 
 
-    
+
 }
