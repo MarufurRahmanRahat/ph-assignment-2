@@ -15,6 +15,10 @@
 
 
 /* shared styles */
+.hide {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,8 +26,8 @@
 }
 
 .container {
-    max-width: 1140px;
     width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -36,7 +40,7 @@ img {
 .heading-black {
     color: rgb(0, 0, 0);
     font-family: Noto Serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 700;
 
 }
@@ -44,14 +48,14 @@ img {
 .heading-orange {
     color: rgb(233, 90, 8);
     font-family: Noto Serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 700;
 }
 
 .p-style {
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 400;
 
 }
@@ -59,7 +63,7 @@ img {
 .small-style {
     color: rgb(137, 135, 161);
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -92,20 +96,17 @@ img {
 .nav-links ul #home {
     color: rgb(37, 36, 50);
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 .nav-links ul #cart {
     color: rgb(0, 0, 0);
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
-/* .nav-links .icon{
-    visibility: visible;
-} */
 .mobile-nav {
     visibility: hidden;
 }
@@ -131,8 +132,8 @@ img {
 }
 
 .banner-left .heading-black,
-.heading-orange {
-    font-size: 65px;
+.banner-left .heading-orange {
+    font-size: 4.06rem;
 }
 
 
@@ -150,7 +151,7 @@ img {
 #card-name {
     color: rgb(17, 17, 17);
     font-family: Inter;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 500;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -159,7 +160,7 @@ img {
 #card-cost {
     color: rgb(17, 17, 17);
     font-family: Inter;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 700;
 }
 
@@ -188,7 +189,7 @@ img {
 }
 
 .fp-left {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 540px;
     height: 597px;
 }
@@ -209,7 +210,7 @@ img {
 .fp-right .fp-para {
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 400;
 }
 
@@ -225,13 +226,14 @@ img {
     list-style-type: disc;
 }
 
+/* trusted badge */
 .trusted-badge {
     /* border: 1px solid black; */
     position: absolute;
     width: 286px;
     height: 286px;
-    left: 540px;
-    top: 2050px;
+    left: 535px;
+    top: 2020px;
     filter: drop-shadow(-4px 10px 2px rgba(0, 0, 0, 0.25));
 }
 
@@ -249,7 +251,7 @@ img {
 @media screen and (max-width:440px) {
 
     /* shared styles */
-    /* * {
+    * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -263,7 +265,33 @@ img {
         display: block;
         max-width: 100%;
         height: auto;
-    } */
+    }
+
+    .heading-black {
+        color: rgb(0, 0, 0);
+        font-family: Noto Serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+
+    }
+
+    .heading-orange {
+        color: rgb(233, 90, 8);
+        font-family: Noto Serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .p-style {
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Inter;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
 
 
     /* nav bar */
@@ -274,15 +302,15 @@ img {
         justify-content: space-between;
         width: 100%;
         height: auto;
-        margin: 18px 30px;
-        padding: 0 50px;
-
-
+        padding: 18px 30px;
+        /* box-sizing: border-box; */
     }
 
     .mobile-time {
         color: #edeff2;
-        ;
+        font-family: Inter;
+        font-size: 1.06rem;
+        font-weight: 590;
     }
 
     .mobile-logo {
@@ -291,31 +319,86 @@ img {
     }
 
     .nav {
-        margin: 13px 16px 28px;
+        width: 100%;
+        height: auto;
+        /* margin: 13px 16px 28px; */
+        /* border: 1px solid black; */
     }
 
-    .nav-links .icon {
-        visibility: hidden;
-    }
 
     /* banner */
     .banner {
-        border: 1px solid tomato;
-        /* margin-top: 120px;
-    margin-bottom: 120px; */
+        /* border: 1px solid tomato; */
+        margin-top: 28px;
+        margin-bottom: 65px;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: flex-end;
+        /* justify-content: center;
+        align-items: flex-end; */
         width: 100%;
         height: auto;
     }
 
-    /* our plants */
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
+    .banner-left .heading-black,
+    .banner-left .heading-orange {
+        font-family: Noto Serif;
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 
+    .banner-left h2 {
+        margin-top: 28px;
+        margin-bottom: 13px;
+    }
+
+    /* our plants */
+    .our-plants p {
+        margin-bottom: 28px;
+        margin-top: 16px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #card-name {
+        color: rgb(17, 17, 17);
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #card-cost {
+        color: rgb(17, 17, 17);
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    /* flowers & plants */
+
+    .fp-lover {
+        /* border: 1px solid black; */
+        margin-top: 42px;
+        margin-bottom: 145px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fp-left {
+        /* border: 2px solid red; */
+        width: 358px;
+        height: 396px;
+    }
+
+    .fp-right {
+        margin-top: 18px;
+        width: 361px;
+        height: 234px;
+        padding: 0;
+    }
 
 
 
