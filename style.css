@@ -1,3 +1,19 @@
+/* fonts import */
+/* .inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+
 /* shared styles */
 *{
     box-sizing: border-box;
@@ -8,6 +24,38 @@
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.heading-black{
+color:rgb(0, 0, 0);
+font-family: Noto Serif;
+font-size: 50px;
+font-weight: 700;
+
+}
+.heading-orange{
+color: rgb(233, 90, 8);
+font-family: Noto Serif;
+font-size: 50px;
+font-weight: 700;
+}
+
+.p-style{
+color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+
+}
+.small-style{
+color: rgb(137, 135, 161);
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;  
 }
 
 /* header styles */
@@ -23,11 +71,44 @@
 .nav-links ul li{
     list-style: none;
 }
+.nav-links ul #home{
+color: rgb(37, 36, 50);
+font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+}
+.nav-links ul #cart{
+color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+}
 /* .nav-links .icon{
     visibility: visible;
 } */
  .mobile-nav{
     visibility: hidden;
+ }
+
+ /* banner styles */
+ .banner{
+    /* border: 1px solid tomato; */
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+ }
+ .banner-left{
+    /* border: 1px solid black; */
+    flex: 1;
+ }
+ .banner-right{
+    /* border: 1px solid black; */
+    flex: 1;
+ }
+ .banner-left .heading-black,.heading-orange{
+     font-size: 65px;
  }
 
 
