@@ -142,9 +142,9 @@ img {
     text-align: center;
 }
 
-.our-plants p{
- margin-bottom: 50px;
- margin-top: 16px;
+.our-plants p {
+    margin-bottom: 50px;
+    margin-top: 16px;
 }
 
 #card-name {
@@ -175,6 +175,53 @@ img {
 
 .card img {
     width: 100%;
+}
+
+/* flower & plants lover */
+.fp-lover {
+    /* border: 1px solid black; */
+    margin-top: 200px;
+    margin-bottom: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fp-left {
+    /* border: 2px solid red; */
+    width: 540px;
+    height: 597px;
+}
+
+.fp-right {
+    /* border: 1px solid blue; */
+    width: 600px;
+    height: 597px;
+    padding:38px 60px;
+    padding-right: 0;
+}
+
+ .fp-right .fp-title {
+    /* border: 1px solid violet; */
+    margin-bottom: 20px;
+}
+.fp-right .fp-para{
+    color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+}
+
+
+.fp-right ul{
+list-style-position: outside;  
+  padding-left: 20px;          
+  margin: 0;
+}
+
+.fp-right li {
+    margin-bottom: 20px;
+    list-style-type: disc;
 }
 
 
@@ -255,8 +302,8 @@ img {
 
     /* our plants */
     .cards {
-    grid-template-columns: repeat(2, 1fr);
-}
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 
 
