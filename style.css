@@ -122,8 +122,26 @@ font-weight: 400;
 
 /* for mobile device like iphone 14 & 15 pro */
 @media screen and (max-width:440px) {
+
+    /* shared styles */
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+    /* nav bar */
 .mobile-nav{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     visibility:visible;
     display: flex;
     justify-content:space-between;
@@ -148,6 +166,21 @@ font-weight: 400;
 .nav-links .icon{
     visibility: hidden;
 }
+
+/* banner */
+.banner{
+    border: 1px solid tomato;
+    /* margin-top: 120px;
+    margin-bottom: 120px; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end; 
+    width: 100%;
+    height: auto;
+ }
+
+
 
     
 }
