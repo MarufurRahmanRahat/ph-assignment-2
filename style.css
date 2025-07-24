@@ -1,0 +1,72 @@
+/* shared styles */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header styles */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links ul{
+   display: flex;
+   gap: 48px;
+}
+.nav-links ul li{
+    list-style: none;
+}
+/* .nav-links .icon{
+    visibility: visible;
+} */
+ .mobile-nav{
+    visibility: hidden;
+ }
+
+
+
+
+
+
+
+
+/* media query */
+
+/* for mobile device like iphone 14 & 15 pro */
+@media screen and (max-width:440px) {
+.mobile-nav{
+    border: 1px solid red;
+    visibility:visible;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    height: auto;
+    margin:18px 30px;
+    padding: 0 50px;
+
+
+ }
+ .mobile-time{
+    color: #edeff2;;
+ }
+ .mobile-logo{
+    display: flex;
+    gap: 15px;
+ }
+
+.nav{
+    margin: 13px 16px 28px;
+}
+.nav-links .icon{
+    visibility: hidden;
+}
+
+    
+}
