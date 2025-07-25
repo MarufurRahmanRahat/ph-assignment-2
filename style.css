@@ -75,6 +75,9 @@ img {
     background-color: rgb(233, 90, 8);
     color: rgb(255, 255, 255);
     border: none;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /* header styles */
@@ -328,6 +331,52 @@ img {
     text-underline-offset: 6px;
 }
 
+/* colourful bunch */
+.c-bunch {
+    /* border: solid slateblue; */
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    background-image: url("./assets/news-letter-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.bunch-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 195px;
+
+}
+
+.c-bunch h2 {
+    color: rgb(255, 255, 255);
+    font-family: Noto Serif;
+    font-size: 3.125rem;
+    font-weight: 700;
+    padding-top: 200px;
+    padding-bottom: 25px;
+}
+
+.bunch-email input {
+    width: 644px;
+    height: 50px;
+    padding: 8px 20px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.bunch-email .btn {
+    width: 186px;
+    height: 50px;
+    padding: 16px 50px
+}
+
 
 
 
@@ -548,7 +597,7 @@ img {
         justify-content: center;
         align-items: center;
         gap: 5px;
-        border-radius:0;
+        border-radius: 0;
     }
 
     .item-1 {
@@ -598,6 +647,53 @@ img {
         font-size: 1rem;
         font-weight: 600;
     }
+
+    /* colourful bunch */
+    .c-bunch {
+        /* border: solid slateblue; */
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        margin-bottom: 50px;
+        background-image: url("./assets/news-letter-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .bunch-email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 65px;
+
+    }
+
+    .c-bunch h2 {
+        color: rgb(255, 255, 255);
+        font-family: Noto Serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+        padding-top: 110px;
+        padding-bottom: 25px;
+    }
+
+    .bunch-email input {
+        width: 218px;
+        height: 50px;
+        padding: 8px 20px;
+        color: rgba(0, 0, 0, 0.4);
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .bunch-email .btn {
+        width: 103px;
+        height: 50px;
+        padding: 16px 12px;
+    }
+
 
 
 
